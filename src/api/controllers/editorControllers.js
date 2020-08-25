@@ -461,7 +461,6 @@ module.exports = {
   },
   async editorUpdateOrder(req, res) {
     try {
-      console.log(1)
       const orderId = req.params.orderId;
       var status = req.body.status;
       var isPaymentCompleted = req.body.isPaymentCompleted;
@@ -471,8 +470,10 @@ module.exports = {
       });
       if (!order)
         return res.status(404).json({ error: { message: "Order not found" } });
-      order.status = status;
-      order.isPaymentCompleted = isPaymentCompleted;
+      if (status) order.status = status;
+      if (isPaymentCompleted !== "") {
+        order.isPaymentCompleted = isPaymentCompleted;
+      }
       order.save();
       if (order.status === "completed") {
         const user = await Customer.findById(order.customerId);
