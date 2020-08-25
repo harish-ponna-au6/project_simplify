@@ -1,0 +1,19 @@
+.EditorCreateOrder {
+  min-height: 100vh;
+}
+
+.EditorCreateOrder input:focus {
+  color: var(--color-black) !important;
+}
+.EditorCreateOrder form button {
+  background-color: #ff575f;
+  color: var(--color-white);
+}
+.EditorCreateOrder form button:hover {
+  color: var(--color-white);
+  background-color: #e91a25;
+}
+
+.EditorCreateOrder form svg {
+  color: var(--color-primary);
+}

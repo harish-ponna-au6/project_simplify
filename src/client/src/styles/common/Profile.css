@@ -1,0 +1,14 @@
+.Profile .card {
+  width: 450px;
+}
+.Profile input:focus {
+  color: var(--color-black) !important;
+}
+.Profile form button {
+  background-color: #ff575f;
+  color: var(--color-white);
+}
+.Profile form button:hover {
+  color: var(--color-white);
+  background-color: #fa2b35;
+}

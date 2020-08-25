@@ -1,0 +1,28 @@
+.CustomerHome {
+  margin-top: 30px;
+}
+.CustomerHome .card {
+  background-color: var(--color-white);
+  min-height: 300px;
+  width: 200px;
+  color: var(--color-black);
+  margin: 20px 30px;
+}
+.CustomerHome .card a {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.CustomerHome .card a:hover {
+  background-color: var(--color-primary-shady);
+  border: none;
+}
+
+.CustomerHome .card div {
+  border: 8px solid var(--color-other) !important;
+  font-size: 40px;
+  color: var(--color-primary);
+  height: 100px;
+  width: 100px;
+}

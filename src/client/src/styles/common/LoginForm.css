@@ -1,0 +1,19 @@
+.LoginForm {
+  min-height: 90vh;
+}
+
+.LoginForm input:focus {
+  color: var(--color-black) !important;
+}
+.LoginForm form button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.LoginForm form button:hover {
+  color: var(--color-white);
+  background-color: #e91a25;
+}
+
+.LoginForm form svg {
+  color: var(--color-primary);
+}

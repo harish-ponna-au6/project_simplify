@@ -1,0 +1,15 @@
+.CustomersOrEditors .card {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 400px;
+}
+.CustomersOrEditors .card a {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.CustomersOrEditors .card a:hover {
+  background-color: var(--color-primary-shady);
+  border: none;
+}

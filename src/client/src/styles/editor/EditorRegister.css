@@ -1,0 +1,19 @@
+.EditorRegister {
+  min-height: 100vh;
+}
+
+.EditorRegister input:focus {
+  color: black !important;
+}
+.EditorRegister form button {
+  background-color: #ff575f;
+  color: white;
+}
+.EditorRegister form button:hover {
+  color: white;
+  background-color: #e91a25;
+}
+
+.EditorRegister form svg {
+  color: var(--color-primary);
+}

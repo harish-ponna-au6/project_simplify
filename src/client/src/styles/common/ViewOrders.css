@@ -1,0 +1,15 @@
+.ViewOrders .card {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  width: 400px;
+}
+.ViewOrders .card a {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.ViewOrders .card a:hover {
+  background-color: var(--color-primary-shady);
+  border: none;
+}

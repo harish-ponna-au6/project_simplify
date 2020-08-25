@@ -1,0 +1,28 @@
+.EditorHome {
+  margin-top: 150px !important;
+}
+.EditorHome .card {
+  background-color: var(--color-white);
+  min-height: 320px;
+  width: 200px;
+  color: var(--color-black);
+  margin: 20px 10px;
+}
+.EditorHome .card a {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.EditorHome .card a:hover {
+  background-color: var(--color-primary-shady);
+  border: none;
+}
+
+.EditorHome .card div {
+  border: 8px solid var(--color-other) !important;
+  font-size: 40px;
+  color: var(--color-primary);
+  height: 100px;
+  width: 100px;
+}

@@ -1,0 +1,19 @@
+.EditorLogin {
+  min-height: 100vh;
+}
+
+.EditorLogin input:focus {
+  color: black !important;
+}
+.EditorLogin form button {
+  background-color: #ff575f;
+  color: white;
+}
+.EditorLogin form button:hover {
+  color: white;
+  background-color: #e91a25;
+}
+
+.EditorLogin form svg {
+  color: var(--color-primary);
+}

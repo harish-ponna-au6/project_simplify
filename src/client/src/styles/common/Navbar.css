@@ -1,0 +1,70 @@
+nav.navbar {
+  z-index: 1000;
+  margin-top: 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-primary);
+  font-family: "Recursive", sans-serif;
+}
+
+nav .navbar-brand {
+  font-family: "Lemonada", cursive;
+  margin: 0 40px 0 10px;
+}
+
+nav input {
+  width: 145px !important;
+}
+
+nav input:focus {
+  width: 200px !important;
+}
+.second-input {
+  margin-right: 20px !important;
+}
+
+.account > button {
+  min-width: 150px;
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.account #btnGroupDrop1:hover,
+.account #btnGroupDrop1:focus {
+  background-color: var(--color-primary) !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.account .dropdown-menu {
+  background-color: var(--color-primary) !important;
+}
+.account a {
+  color: var(--color-white);
+}
+.account a:hover,
+.account a:focus {
+  background-color: #ff8989 !important;
+  box-shadow: none !important;
+  color: var(--color-white);
+}
+
+.account svg {
+  position: relative;
+  /* bottom: px; */
+  left: -10px;
+}
+
+nav button.navbar-toggler:focus {
+  outline: none;
+}
+nav button.navbar-toggler {
+  border: var(--color-white) 1px solid !important;
+  padding: 4px 6px !important;
+}
+nav button span.navbar-toggler-icon {
+  height: 20px !important;
+  width: 20px !important;
+  color: var(--color-white) !important;
+}

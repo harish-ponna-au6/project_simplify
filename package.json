@@ -1,0 +1,38 @@
+{
+  "name": "project-simplify-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "client":"npm start --prefix client",
+    "start": "node src/index.js",
+    "heroku-postbuild":"cd src/client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "1.0.1",
+    "dotenv": "8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18",
+    "nodemailer": "^6.4.8",
+    "razorpay": "2.0.6",
+    "uuid": "8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  }
+}

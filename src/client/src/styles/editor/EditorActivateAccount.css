@@ -1,0 +1,15 @@
+.EditorActivateAccount .card {
+  width: 500px;
+}
+
+.EditorActivateAccount input:focus {
+  color: var(--color-black) !important;
+}
+.EditorActivateAccount  button {
+  background-color: #ff575f;
+  color: var(--color-white);
+}
+.EditorActivateAccount  button:hover {
+  color: var(--color-white);
+  background-color: #e91a25;
+}

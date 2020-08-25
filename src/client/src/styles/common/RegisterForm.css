@@ -1,0 +1,15 @@
+.RegisterForm input:focus {
+  color: var(--color-black) !important;
+}
+.RegisterForm form button {
+  background-color: #ff575f;
+  color: var(--color-white);
+}
+.RegisterForm form button:hover {
+  color: var(--color-white);
+  background-color: #e91a25;
+}
+
+.RegisterForm form svg {
+  color: var(--color-primary);
+}

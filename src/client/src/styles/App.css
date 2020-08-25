@@ -1,0 +1,61 @@
+:root {
+  --color-white: white;
+  --color-white-shady: rgb(223, 219, 219);
+  --color-black: #192361;
+  --color-black-shady: rgb(46, 46, 46);
+  --color-primary: #ff575f;
+  --color-primary-shady: #ff949a;
+  --color-secondary: #51d5e6;
+  --color-other: #1b1c69;
+}
+
+body {
+  background-color: var(--color-secondary);
+  margin: 0;
+  padding: 0;
+  font-family: "Lemonada";
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  max-width: 90%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  color: var(--color-black);
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4a53;
+}
+
+@media only screen and (max-width: 900px) {
+  h2,
+  h3,
+  h4 {
+    font-size: 22px !important;
+  }
+}

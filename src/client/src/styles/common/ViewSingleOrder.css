@@ -1,0 +1,12 @@
+.ViewSingleOrder .card {
+  width: 450px;
+}
+
+.ViewSingleOrder form button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.ViewSingleOrder form button:hover {
+  color: var(--color-white);
+  background-color: #e91a25;
+}
