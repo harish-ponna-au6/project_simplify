@@ -38,8 +38,7 @@ module.exports = {
         return res.status(401).json({ error: { message: "invalid token" } });
       }
       const editor = await Editor.findOne({
-        _id: payload._id,
-        jsonWebToken: token
+        _id: payload._id
       });
       if (!editor)
         return res.status(401).json({ error: { message: "no editor found" } });
@@ -59,8 +58,7 @@ module.exports = {
         return res.status(401).json({ error: { message: "invalid token" } });
       }
       const customer = await Customer.findOne({
-        _id: payload._id,
-        jsonWebToken: token
+        _id: payload._id
       });
       if (!customer)
         return res
