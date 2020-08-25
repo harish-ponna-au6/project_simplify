@@ -160,7 +160,7 @@ module.exports = {
         return res.status(401).json({
           error: {
             message:
-              "Complete the account activation process to activate your account"
+              "Complete the account activation process to get your account activated"
           }
         });
       if (editor.status === "blocked")
@@ -423,8 +423,11 @@ module.exports = {
         advanceAmountInINR,
         isPaymentCompleted
       } = req.body;
+      console.log("1");
+
       totalAmountInINR = Number(totalAmountInINR);
       advanceAmountInINR = Number(advanceAmountInINR);
+      console.log("2");
       await new Order({
         customerId,
         editorId: req.editor._id,
@@ -438,10 +441,13 @@ module.exports = {
         advanceAmountInINR,
         isPaymentCompleted: Boolean(isPaymentCompleted)
       }).save();
+      console.log("3");
       return res
         .status(201)
         .json({ success: { message: "order created successfully" } });
     } catch (error) {
+      console.log("4");
+      console.log("err0r", error.message);
       return res.status(500).json({ error: { message: error.message } });
     }
   },
@@ -455,6 +461,7 @@ module.exports = {
   },
   async editorUpdateOrder(req, res) {
     try {
+      console.log(1)
       const orderId = req.params.orderId;
       var status = req.body.status;
       var isPaymentCompleted = req.body.isPaymentCompleted;
@@ -468,7 +475,7 @@ module.exports = {
       order.isPaymentCompleted = isPaymentCompleted;
       order.save();
       if (order.status === "completed") {
-        const user = await Customer.findById(order.editorId);
+        const user = await Customer.findById(order.customerId);
         completedOrderMailing(order.titleOfOrder, user.email);
       }
       return res
