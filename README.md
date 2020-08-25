@@ -37,7 +37,7 @@
     - ReactJS
     - Redux
     - React Query
-    - Framework Motion
+    - Framer Motion
     - Axios
 
 ### Types of users to this Application are:
