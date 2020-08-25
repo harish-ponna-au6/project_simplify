@@ -8,11 +8,6 @@ const axiosInstance = axios.create({
   }
 });
 
-axiosInstance.interceptors.response.use(res=>res, (error) => {
-  if (error.response.status === 401) {
-    localStorage.removeItem("user");
-    window.location = "/";
-  }
-});
+
 
 export { axiosInstance };
