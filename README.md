@@ -1,9 +1,5 @@
 # Simplify
 
-### Project Name : Simplify
-
-### Team : Siddhida & Harish
-
 ### Deployed URL: [simplify-2021.herokuapp.com](https://simplify-2021.herokuapp.com/)
 
 
