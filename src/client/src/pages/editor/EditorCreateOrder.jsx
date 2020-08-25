@@ -137,8 +137,8 @@ const EditorCreateOrder = (props) => {
                       type="radio"
                       name="outPutFormat"
                       id="inlineRadio2"
-                      value="Pendrive"
-                      checked={state.outPutFormat === "Pendrive"}
+                      value="pendrive"
+                      checked={state.outPutFormat === "pendrive"}
                       onChange={handleOnChange}
                     />
                     <label className="form-check-label" htmlFor="inlineRadio2">
@@ -147,12 +147,12 @@ const EditorCreateOrder = (props) => {
                   </div>
                   <div className="form-check form-check-inline">
                     <input
-                      value="Blu-ray"
+                      value="blu-ray"
                       className="form-check-input"
                       type="radio"
                       name="outPutFormat"
                       id="inlineRadio3"
-                      checked={state.outPutFormat === "Blu-ray"}
+                      checked={state.outPutFormat === "blu-ray"}
                       onChange={handleOnChange}
                     />
                     <label className="form-check-label" htmlFor="inlineRadio3">
@@ -161,12 +161,12 @@ const EditorCreateOrder = (props) => {
                   </div>
                   <div className="form-check form-check-inline">
                     <input
-                      value="HD"
+                      value="hd"
                       className="form-check-input"
                       type="radio"
                       name="outPutFormat"
                       id="inlineRadio3"
-                      checked={state.outPutFormat === "HD"}
+                      checked={state.outPutFormat === "hd"}
                       onChange={handleOnChange}
                     />
                     <label className="form-check-label" htmlFor="inlineRadio3">

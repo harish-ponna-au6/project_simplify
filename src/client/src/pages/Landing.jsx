@@ -155,8 +155,8 @@ const Landing = (props) => {
             variants={aboutVariants}
             className="col-10 col-md-6  rounded text-justify px-5 py-4 text-light about"
           >
-            A place where you can manage your work with easy clicks. Create and
-            update orders in Link snap. Track the orders statuses without any
+            A place where editors(graphic designeers) can manage their work with easy clicks. Create and
+            update orders in a snap of time. Track the orders statuses without any
             hastle. Maintain records of orders for fututre references. Interact
             with customers for more productivity and keeping them updated.
           </motion.div>
