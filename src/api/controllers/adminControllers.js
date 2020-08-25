@@ -130,7 +130,7 @@ module.exports = {
       if (!admin)
         return res
           .status(400)
-          .json({ error: "Incorrect credentials(email not found)" });
+          .json({  error: { message: "Incorrect credentials" } });
       const isMatched = await compare(password, admin.password);
       if (!isMatched)
         return res.status(400).send({

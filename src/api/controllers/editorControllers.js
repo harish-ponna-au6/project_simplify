@@ -154,7 +154,7 @@ module.exports = {
       const isMatched = await compare(password, editor.password);
       if (!isMatched)
         return res.status(401).send({
-          error: "Incorrect credentials"
+          error: { message: "Incorrect credentials" }
         });
       if (editor.status === "requested")
         return res.status(401).json({
